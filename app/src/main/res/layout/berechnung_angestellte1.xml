@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
-    android:background="@color/DunkelrotTransparent">
-
+android:background="@color/GelbTransparent"
+    android:weightSum="10">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1.8"
         android:orientation="vertical"
+        android:weightSum="8"
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
-            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="bottom"
             android:text="Geburtsdatum"
-            android:textColor="@android:color/black"
             android:textSize="25sp" />
 
         <LinearLayout
@@ -62,91 +62,75 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:text="Einnahmen"
-            android:textColor="@android:color/black"
-            android:textSize="25sp" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Rente" />
-
-        <EditText
-            android:id="@+id/editText11"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nebenjob" />
-
-        <EditText
-            android:id="@+id/editText12"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Sonstige Einnahmen" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2.4"
+        android:layout_weight="6.4"
         android:orientation="vertical"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Berufsleben"
-            android:textColor="@android:color/black"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="bottom|left"
+            android:text="Einnahme und Absicherung"
             android:textSize="25sp" />
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/editText7"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Bruttogehalt"
+            android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/editText13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Alter bei Berufsstart" />
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nettogehalt"
+            android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/editText14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Renteneintrittsalter" />
-        </LinearLayout>
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Volle Erwerbsminderungsrente"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="sonstige Einnahme"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Private Erwerbs- oder BU- Absicherung"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.6"
+        android:layout_weight="1.8"
         android:orientation="horizontal"
         android:padding="10dp">
 
@@ -160,10 +144,15 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2.7"
+            android:layout_weight="2.3"
             android:background="@drawable/rectangle_style"
-            android:drawableBottom="@android:drawable/ic_media_play"
-            android:gravity="center"
-            android:paddingBottom="32dp" />
+            android:backgroundTint="#403636"
+            android:drawableStart="@android:drawable/ic_media_play"
+
+            android:gravity="center_horizontal"
+            android:padding="44dp"
+            android:topLeftRadius="8dp"
+            android:topRightRadius="8dp" />
     </LinearLayout>
+
 </LinearLayout>
