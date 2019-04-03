@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/OrangeTransparent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2.5"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView2"
@@ -16,7 +20,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Geburtsdatum" />
+            android:text="Geburtsdatum"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,9 +62,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="6.4"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView3"
@@ -66,7 +73,9 @@
             android:layout_height="match_parent"
             android:layout_weight="5"
             android:gravity="center_vertical"
-            android:text="Einnahmen und Absicherungen" />
+            android:text="Einnahmen und Absicherungen"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,9 +123,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2.5"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,7 +141,8 @@
             android:layout_height="match_parent"
             android:layout_weight="2.5"
             android:background="@drawable/rectangle_style"
-            android:text="Button" />
+            android:drawableBottom="@android:drawable/ic_media_play"
+            android:paddingBottom="38dp"/>
     </LinearLayout>
 
 </LinearLayout>
