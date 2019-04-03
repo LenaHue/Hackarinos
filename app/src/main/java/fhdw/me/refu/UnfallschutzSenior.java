@@ -23,6 +23,30 @@ public class UnfallschutzSenior {
             e.printStackTrace();
         }
     }
+    public int getTag() {
+         return tag;
+    }
+
+    public void setTag(int tag) {
+        this.tag = tag;
+    }
+
+    public int getMonat() {
+        return monat;
+    }
+
+    public void setMonat(int monat) {
+        this.monat = monat;
+    }
+
+    public int getJahr() {
+        return jahr;
+    }
+
+    public void setJahr(int jahr) {
+        this.jahr = jahr;
+        this.alterBerechnen();
+    }
 
     public double getSeniorRente() {
         return seniorRente;
