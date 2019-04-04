@@ -17,6 +17,7 @@ public class Home extends Fragment {
     Button buttonSchlafzimmer;
     Button buttonFlur;
     Button buttonWohnzimmer;
+    Button buttonBad, buttonTuer, buttonKueche;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,6 +48,10 @@ public class Home extends Fragment {
         buttonSchlafzimmer = view.findViewById(R.id.buttonSchlafzimmer);
         buttonFlur = view.findViewById(R.id.buttonFlur);
         buttonWohnzimmer = view.findViewById(R.id.buttonWohnzimmer);
+        buttonBad = view.findViewById(R.id.button_bad);
+        buttonTuer = view.findViewById(R.id.button_tuer);
+        buttonKueche = view.findViewById(R.id.button_kueche);
+
 
         buttonSchlafzimmer.setOnClickListener( new View.OnClickListener(){
             @Override
@@ -66,6 +71,25 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Die Böden müssen rutschfrei sein", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        buttonBad.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Höhe des WCs und Duschhilfe", Toast.LENGTH_SHORT).show();
+            }
+        });
+        buttonTuer.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "DHöhe der Türgriffe und Breite der Tür", Toast.LENGTH_SHORT).show();
+            }
+        });
+        buttonKueche.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Unterfahrbare Arbeitsplatte und Tische", Toast.LENGTH_SHORT).show();
             }
         });
     }

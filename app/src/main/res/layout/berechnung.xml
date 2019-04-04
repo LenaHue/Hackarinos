@@ -38,7 +38,7 @@
         android:layout_below="@id/linearlayout_angestellter"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:padding="10dp"
-        android:background="@drawable/rectangle_orange"
+        android:background="@drawable/rectangle_tuerkis"
         android:orientation="vertical"
         android:layout_weight="1"
         >
@@ -47,7 +47,7 @@
             android:id="@+id/button_selbststaendiger"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rectangle_orange"
+            android:background="@drawable/rectangle_tuerkis"
             android:drawableTop="@drawable/ic_selbststaendig"
             android:padding="40dp"
             android:text="Selbstständiger"
@@ -64,7 +64,7 @@
         android:layout_below="@id/linearlayout_selbststaendiger"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:padding="10dp"
-        android:background="@drawable/rectangle_lila"
+        android:background="@drawable/rectangle_orange"
         android:orientation="vertical"
         android:layout_weight="1"
         >
