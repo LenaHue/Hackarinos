@@ -32,6 +32,6 @@ public class Berechnung extends Fragment {
         _menuItem.setChecked(true);
 
 
-        return inflater.inflate(R.layout.berechnung_angestellte1, container, false);
+        return inflater.inflate(R.layout.berechnung, container, false);
     }
 }
