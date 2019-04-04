@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass= Home.class;
                 break;
             case R.id.nav_info:
-                fragmentClass = Berechnung.class;
+                fragmentClass = Ergebnis_SwipeData.class;
                 break;
             default:
                 fragmentClass = Berechnung.class;

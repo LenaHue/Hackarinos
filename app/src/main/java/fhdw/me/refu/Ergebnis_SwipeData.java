@@ -2,12 +2,14 @@ package fhdw.me.refu;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-public class Ergebnis_SwipeData extends AppCompatActivity {
+public class Ergebnis_SwipeData extends Fragment {
 
     Context context;
     private ViewPager mViewPager;
@@ -20,17 +22,17 @@ public class Ergebnis_SwipeData extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ergebnis_adapter);
+        //setContentView(R.layout.ergebnis_adapter);
 
-        context = this;
+        context = getContext();
         activity = this;
 
-        LayoutInflater inflater = LayoutInflater.from(activity.getApplicationContext());
-        View view = inflater.inflate(R.layout.ergebnis, null);
+        LayoutInflater Lenainflater = LayoutInflater.from(activity.getContext());
+        View view = Lenainflater.inflate(R.layout.ergebnis, null);
 
-        mViewPager = (ViewPager) findViewById(R.id.viewPager);
+        mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mCardAdapter = new Ergebnis_CardPagerAdapter();
 
         /*mCardAdapter.addCardItem(new Ergebnis_CardItem("Rentenleistung", unfallschutz.getRentenleistung()+ "€"));
@@ -45,6 +47,8 @@ public class Ergebnis_SwipeData extends AppCompatActivity {
         mViewPager.setAdapter(mCardAdapter);
         mViewPager.setPageTransformer(false, mCardShadowTransformer);
         mViewPager.setOffscreenPageLimit(3);
+
+        return inflater.inflate(R.layout.ergebnis_adapter,container,false);
 
     }
 
