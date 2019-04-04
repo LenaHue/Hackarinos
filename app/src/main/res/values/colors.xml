@@ -15,4 +15,5 @@
     <color name="Hellblau">#5CBFB6</color>
     <color name="Hellgrün">#AD9300</color>
     <color name="Tintenblau">#004D7A</color>
+    <color name="Transparent">#00FFFFFF</color>
 </resources>
