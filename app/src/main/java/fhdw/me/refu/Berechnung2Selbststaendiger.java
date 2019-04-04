@@ -30,6 +30,7 @@ public class Berechnung2Selbststaendiger extends Fragment {
         View view =  inflater.inflate(R.layout.berechnung_selbststaendige,container,false);
 
         buttonContinue = view.findViewById(R.id.button_continue);
+        // final EditText editText = (EditText) view.findViewById(R.id.input_TT);
 
         buttonContinue.setOnClickListener( new View.OnClickListener(){
             @Override
@@ -49,6 +50,18 @@ public class Berechnung2Selbststaendiger extends Fragment {
             }
         });
 
+        /*
+        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    editText.setHint("Placeholder");
+                } else {
+                    editText.setHint("");
+                }
+            }
+        });
+        */
         return view;
     }
 }
