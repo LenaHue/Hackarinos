@@ -51,6 +51,7 @@ public class Home extends Fragment {
                 Toast.makeText(getContext(), "Höhe des WCs und Duschhilfe", Toast.LENGTH_SHORT).show();
             }
         });
+        //kommentar
 
         buttonTuer.setOnClickListener( new View.OnClickListener(){
             @Override
