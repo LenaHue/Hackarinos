@@ -19,4 +19,7 @@
     <color name="Tintenblau">#004D7A</color>
     <color name="Schwarz">#000000</color>
     <color name="Transparent">#00FFFFFF</color>
+    <color name="Dunkelrot_transparent">#85FF0033</color>
+    <color name="Gelb_transparent">#A3FFAB00</color>
+    <color name="Orange_transparent">#A3FF611A</color>
 </resources>
