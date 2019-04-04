@@ -21,7 +21,7 @@
             android:layout_weight="1.5"
             android:gravity="center_vertical"
             android:text="Geburtsdatum"
-            android:textColor="@android:color/black"
+            android:textColor="@color/Dunkelrot"
             android:textSize="25sp" />
 
         <LinearLayout
@@ -72,7 +72,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1.2"
             android:text="Einnahmen"
-            android:textColor="@android:color/black"
+            android:textColor="@color/Dunkelrot"
             android:textSize="25sp" />
 
         <EditText
@@ -115,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Berufsleben"
-            android:textColor="@android:color/black"
+            android:textColor="@color/Dunkelrot"
             android:textSize="25sp" />
 
         <LinearLayout
@@ -158,12 +158,12 @@
 
         <Button
             android:id="@+id/button_continue"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="194dp"
+            android:layout_height="59dp"
             android:layout_weight="2.7"
             android:background="@drawable/rectangle_style"
-            android:drawableBottom="@android:drawable/ic_media_play"
+            android:drawableStart="@android:drawable/ic_media_play"
             android:gravity="center"
-            android:paddingBottom="32dp" />
+            android:padding="15dp" />
     </LinearLayout>
 </LinearLayout>
