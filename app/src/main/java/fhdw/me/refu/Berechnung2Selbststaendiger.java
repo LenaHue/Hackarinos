@@ -71,7 +71,7 @@ public class Berechnung2Selbststaendiger extends Fragment {
                 bundle.putDouble("Kapitalleistung",selbst.getKapitalleistung());
 
                 frag.setArguments(bundle);
-                
+
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_selbststaendig,frag);
                 ft.addToBackStack("tag").commit();
