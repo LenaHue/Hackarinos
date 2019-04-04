@@ -48,9 +48,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="mtl."
                 android:textSize="30dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="mtl."/>
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
