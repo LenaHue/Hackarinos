@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Home extends Fragment {
 
@@ -27,6 +28,8 @@ public class Home extends Fragment {
 
         //Setting Menu-Item checked
         _menuItem.setChecked(true);
+
+        Toast.makeText(getContext(), "Internet ist nicht verfügbar.", Toast.LENGTH_SHORT).show();
 
         return inflater.inflate(R.layout.home, container, false);
     }

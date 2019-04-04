@@ -135,14 +135,14 @@
             android:orientation="vertical"></LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_continue"
             style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2.5"
             android:background="@drawable/rectangle_style"
             android:drawableBottom="@android:drawable/ic_media_play"
-            android:paddingBottom="38dp"/>
+            android:paddingBottom="38dp" />
     </LinearLayout>
 
 </LinearLayout>
