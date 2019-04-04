@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         //setting Homepage Fragment for Start
         Fragment fragment = null;
-        Class fragmentClass = Berechnung.class;
+        Class fragmentClass = Home.class;
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         try {
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = Berechnung.class;
                 break;
             case R.id.nav_home:
-                fragmentClass= Berechnung.class;
+                fragmentClass= Home.class;
                 break;
             case R.id.nav_info:
                 fragmentClass = Berechnung.class;
