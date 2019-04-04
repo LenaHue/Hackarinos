@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_lila"
-            android:drawableTop="@drawable/ic_angestellter"
+            android:drawableTop="@drawable/ic_senior"
             android:padding="40dp"
             android:text="Senior"
             android:textSize="30dp" />
