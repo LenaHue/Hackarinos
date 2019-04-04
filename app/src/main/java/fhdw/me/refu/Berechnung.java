@@ -56,12 +56,15 @@ public class Berechnung extends Fragment {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
                 Class fragClass = Berechnung2Angestellter.class;
+                Bundle bundle = new Bundle();
                 try{
                     frag = (Fragment) fragClass.newInstance();}
                 catch (Exception e){
                     e.printStackTrace();
                 }
 
+                bundle.putString("type", "Angestellter");
+                frag.setArguments(bundle);
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_berechnung,frag);
                 ft.addToBackStack("tag").commit();
@@ -74,12 +77,15 @@ public class Berechnung extends Fragment {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
                 Class fragClass = Berechnung2Selbststaendiger.class;
+                Bundle bundle = new Bundle();
                 try{
                     frag = (Fragment) fragClass.newInstance();}
                 catch (Exception e){
                     e.printStackTrace();
                 }
 
+                bundle.putString("type", "Selbst");
+                frag.setArguments(bundle);
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_berechnung,frag);
                 ft.addToBackStack("tag").commit();
@@ -92,12 +98,15 @@ public class Berechnung extends Fragment {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
                 Class fragClass = Berechnung2Senioren.class;
+                Bundle bundle = new Bundle();
                 try{
                     frag = (Fragment) fragClass.newInstance();}
                 catch (Exception e){
                     e.printStackTrace();
                 }
 
+                bundle.putString("type", "Senior");
+                frag.setArguments(bundle);
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_berechnung,frag);
                 ft.addToBackStack("tag").commit();

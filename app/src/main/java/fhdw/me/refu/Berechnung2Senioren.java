@@ -23,6 +23,7 @@ public class Berechnung2Senioren extends Fragment {
     EditText editTextAlterBerufsstatrt;
     EditText editTextRentenalter;
     Button buttonContinue;
+    UnfallschutzPerson senior;
 
 
     @Nullable
@@ -32,6 +33,16 @@ public class Berechnung2Senioren extends Fragment {
         View view = inflater.inflate(R.layout.berechnung_senior,container,false);
 
         buttonContinue = view.findViewById(R.id.button_continue);
+         editTextTag = view.findViewById(R.id.senior_tag);
+         editTextMonat = view.findViewById(R.id.senior_monat);
+         editTextJahr = view.findViewById(R.id.senior_jahr);
+         editTextRente = view.findViewById(R.id.senior_rente);
+         editTextNebenjob = view.findViewById(R.id.senior_nebenjob);
+         editTextsonstigeEinnahmen = view.findViewById(R.id.senior_sonstEinnahmen);
+         editTextAlterBerufsstatrt = view.findViewById(R.id.senior_alterStart);
+         editTextRentenalter = view.findViewById(R.id.senior_renteneintritt);
+
+         senior = new UnfallschutzPerson(this.getArguments().getString("type"));
 
         buttonContinue.setOnClickListener( new View.OnClickListener(){
             @Override
@@ -39,11 +50,28 @@ public class Berechnung2Senioren extends Fragment {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
                 Class fragClass = Ergebnis_SwipeData.class;
+                Bundle bundle = new Bundle();
                 try{
                     frag = (Fragment) fragClass.newInstance();}
                 catch (Exception e){
                     e.printStackTrace();
                 }
+
+                senior.setTag(Integer.parseInt(editTextTag.getText().toString()));
+                senior.setMonat(Integer.parseInt(editTextMonat.getText().toString()));
+                senior.setJahr(Integer.parseInt(editTextJahr.getText().toString()));
+                senior.setSeniorRente(Double.parseDouble(editTextRente.getText().toString()));
+                senior.setSeniorNebenjob(Double.parseDouble(editTextNebenjob.getText().toString()));
+                senior.setSeniorEinnahmen(Double.parseDouble(editTextsonstigeEinnahmen.getText().toString()));
+                senior.setSeniorAlterStart(Integer.parseInt(editTextAlterBerufsstatrt.getText().toString()));
+                senior.setSeniorRenteneintritt(Integer.parseInt(editTextRentenalter.getText().toString()));
+
+                senior.berechnen();
+
+                bundle.putDouble("Rentenleistung", senior.getRentenleistung());
+                bundle.putDouble("Kapitalleistung", senior.getKapitalleistung());
+
+                frag.setArguments(bundle);
 
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_senior,frag);
