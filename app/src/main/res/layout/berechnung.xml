@@ -4,17 +4,19 @@
     android:id="@+id/framelayout_berechnung"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linearlayout_angestellter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@drawable/rectangle_yellow"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
 
         <Button
             android:id="@+id/button_angestellter"
@@ -30,15 +32,16 @@
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linearlayout_selbststaendiger"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/linearlayout_angestellter"
-        android:layout_weight="1"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
         android:background="@drawable/rectangle_orange"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:layout_weight="1"
+        >
 
         <Button
             android:id="@+id/button_selbststaendiger"
@@ -53,22 +56,24 @@
     </LinearLayout>
 
 
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linearlayout_senior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/linearlayout_selbststaendiger"
-        android:layout_weight="1"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
         android:background="@drawable/rectangle_lila"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:layout_weight="1"
+        >
 
         <Button
             android:id="@+id/button_senior"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rectangle_lila"
+            android:background="@drawable/rectangle_orange"
             android:drawableTop="@drawable/ic_senior"
             android:padding="40dp"
             android:text="Senior"

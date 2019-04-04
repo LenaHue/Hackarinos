@@ -4,8 +4,8 @@
     android:id="@+id/framelayout_angestellter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/GelbTransparent"
     android:orientation="vertical"
+android:background="@color/GelbTransparent"
     android:weightSum="10">
 
     <LinearLayout
@@ -13,8 +13,8 @@
         android:layout_height="0dp"
         android:layout_weight="1.8"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:weightSum="8">
+        android:weightSum="8"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView3"

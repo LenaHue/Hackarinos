@@ -21,5 +21,8 @@
     <color name="Transparent">#00FFFFFF</color>
     <color name="Dunkelrot_transparent">#85FF0033</color>
     <color name="Gelb_transparent">#A3FFAB00</color>
-    <color name="Orange_transparent">#A3FF611A</color>
+    <color name="Orange_hell">#F0A165</color>
+    <color name="Hellgrau">#DA9E9B9B</color>
+    <color name="Gelb_hell">#F7E975</color>
+    <color name="Türkis">#8ABBB5</color>
 </resources>
