@@ -35,8 +35,11 @@ public class Ergebnis_SwipeData extends Fragment {
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mCardAdapter = new Ergebnis_CardPagerAdapter();
 
-        mCardAdapter.addCardItem(new Ergebnis_CardItem("Rentenleistung", unfallschutz.getRentenleistung()+ "€"));
-        mCardAdapter.addCardItem(new Ergebnis_CardItem("Kapitalleistung", unfallschutz.getKapitalleistung()+ "€"));
+        Double rentenleistung = this.getArguments().getDouble("Rentenleistung");
+        Double kapitalleistung = this.getArguments().getDouble("Kapitalleistung");
+
+        mCardAdapter.addCardItem(new Ergebnis_CardItem("Rentenleistung", rentenleistung + "€"));
+        mCardAdapter.addCardItem(new Ergebnis_CardItem("Kapitalleistung", kapitalleistung + "€"));
         //mCardAdapter.addCardItem(new Ergebnis_CardItem("Details", unfallschutz.getDetails()));
 
         mCardShadowTransformer = new Ergebnis_CardShadowTransformer(mViewPager, mCardAdapter);
