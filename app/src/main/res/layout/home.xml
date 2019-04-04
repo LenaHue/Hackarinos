@@ -15,7 +15,7 @@
         android:background="@drawable/haus">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_bad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="49dp"
@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button_tuer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -36,17 +36,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
+            app:layout_constraintTop_toBottomOf="@+id/button_kueche" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button_kueche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="138dp"
             android:layout_marginBottom="53dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintBottom_toTopOf="@+id/button_tuer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button7"
             app:layout_constraintTop_toBottomOf="@+id/button6" />
@@ -75,8 +75,8 @@
             android:layout_marginBottom="51dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/button_kueche"
+            app:layout_constraintEnd_toStartOf="@+id/button_bad"
             app:layout_constraintStart_toEndOf="@+id/button5"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,7 +90,7 @@
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintEnd_toStartOf="@+id/button_kueche"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button5" />
     </android.support.constraint.ConstraintLayout>
