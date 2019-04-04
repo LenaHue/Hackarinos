@@ -9,14 +9,13 @@
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linearlayout_angestellter"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="@drawable/rectangle_yellow"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        >
+        android:background="@drawable/rectangle_yellow"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button_angestellter"
@@ -32,16 +31,15 @@
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linearlayout_selbststaendiger"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/linearlayout_angestellter"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:padding="10dp"
+        android:layout_weight="1"
         android:background="@drawable/rectangle_tuerkis"
         android:orientation="vertical"
-        android:layout_weight="1"
-        >
+        android:padding="10dp">
 
         <Button
             android:id="@+id/button_selbststaendiger"
@@ -56,18 +54,16 @@
     </LinearLayout>
 
 
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/linearlayout_senior"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/linearlayout_selbststaendiger"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:padding="10dp"
+        android:layout_weight="1"
         android:background="@drawable/rectangle_orange"
         android:orientation="vertical"
-        android:layout_weight="1"
-        >
+        android:padding="10dp">
 
         <Button
             android:id="@+id/button_senior"

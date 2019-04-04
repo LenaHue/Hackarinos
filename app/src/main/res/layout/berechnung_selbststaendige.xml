@@ -11,23 +11,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.8"
+        android:layout_weight="2"
         android:orientation="vertical"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Geburtsdatum"
-            android:textColor="@android:color/black"
+            android:textColor="@color/Dunkelrot"
             android:textSize="25sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="3">
@@ -89,7 +89,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6.4"
+        android:layout_weight="6.2"
         android:orientation="vertical"
         android:padding="10dp">
 
@@ -100,7 +100,7 @@
             android:layout_weight="5"
             android:gravity="center_vertical"
             android:text="Einnahmen und Absicherungen"
-            android:textColor="@android:color/black"
+            android:textColor="@color/Dunkelrot"
             android:textSize="25sp" />
 
         <LinearLayout
@@ -196,12 +196,12 @@
         <Button
             android:id="@+id/button_continue"
             style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="194dp"
+            android:layout_height="59dp"
             android:layout_weight="2.5"
             android:background="@drawable/rectangle_style"
-            android:drawableBottom="@android:drawable/ic_media_play"
-            android:paddingBottom="38dp" />
+            android:drawableStart="@android:drawable/ic_media_play"
+            android:padding="16dp" />
     </LinearLayout>
 
 </LinearLayout>

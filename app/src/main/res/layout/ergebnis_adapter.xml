@@ -15,6 +15,7 @@
         android:layout_marginVertical="80dp"
         android:layout_marginHorizontal="50dp"
         app:cardCornerRadius="20dp"
+        android:descendantFocusability="blocksDescendants"
         >
 
         <LinearLayout

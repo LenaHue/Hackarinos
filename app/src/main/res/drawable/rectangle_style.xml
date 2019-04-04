@@ -4,6 +4,6 @@
     android:shape="oval"
     android:padding="10dp"
     >
-    <solid android:color="@color/Schwarz"></solid>
+    <solid android:color="@color/Hellgrau"></solid>
     <size android:height="150dp" android:width="150dp"/>
 </shape>
