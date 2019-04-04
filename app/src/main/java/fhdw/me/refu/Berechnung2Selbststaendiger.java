@@ -42,7 +42,7 @@ public class Berechnung2Selbststaendiger extends Fragment {
 
 
 
-        selbst = new UnfallschutzPerson(this.getArguments().getString("typ"));
+        selbst = new UnfallschutzPerson(this.getArguments().getString("type"));
 
         buttonContinue.setOnClickListener( new View.OnClickListener(){
             @Override
