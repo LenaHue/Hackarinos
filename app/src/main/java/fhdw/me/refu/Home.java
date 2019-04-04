@@ -29,7 +29,7 @@ public class Home extends Fragment {
         //Setting Menu-Item checked
         _menuItem.setChecked(true);
 
-        Toast.makeText(getContext(), "Internet ist nicht verfügbar.", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getContext(), "Internet ist nicht verfügbar.", Toast.LENGTH_SHORT).show();
 
         return inflater.inflate(R.layout.home, container, false);
     }
