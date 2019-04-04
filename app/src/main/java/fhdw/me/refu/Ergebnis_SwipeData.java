@@ -18,7 +18,7 @@ public class Ergebnis_SwipeData extends Fragment {
 
     public Ergebnis_SwipeData activity;
 
-    //private Unfallschutz unfallschutz;
+    private UnfallschutzPerson unfallschutz;
 
 
     @Override
@@ -35,12 +35,9 @@ public class Ergebnis_SwipeData extends Fragment {
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mCardAdapter = new Ergebnis_CardPagerAdapter();
 
-        /*mCardAdapter.addCardItem(new Ergebnis_CardItem("Rentenleistung", unfallschutz.getRentenleistung()+ "€"));
+        mCardAdapter.addCardItem(new Ergebnis_CardItem("Rentenleistung", unfallschutz.getRentenleistung()+ "€"));
         mCardAdapter.addCardItem(new Ergebnis_CardItem("Kapitalleistung", unfallschutz.getKapitalleistung()+ "€"));
-        mCardAdapter.addCardItem(new Ergebnis_CardItem("Details", unfallschutz.getDetails()));*/
-
-        mCardAdapter.addCardItem(new Ergebnis_CardItem("Rentenleistung", "1.750€"));
-        mCardAdapter.addCardItem(new Ergebnis_CardItem("Kapitalleistung", "37.000€"));
+        //mCardAdapter.addCardItem(new Ergebnis_CardItem("Details", unfallschutz.getDetails()));
 
         mCardShadowTransformer = new Ergebnis_CardShadowTransformer(mViewPager, mCardAdapter);
 
