@@ -39,7 +39,7 @@ android:background="@color/GelbTransparent"
                 android:layout_weight="1">
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/angestellter_tag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -57,7 +57,7 @@ android:background="@color/GelbTransparent"
                 android:layout_weight="1">
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/angestellter_monat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -75,7 +75,7 @@ android:background="@color/GelbTransparent"
                 android:layout_weight="1">
 
                 <EditText
-                    android:id="@+id/editText5"
+                    android:id="@+id/angestellter_jahr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -111,7 +111,7 @@ android:background="@color/GelbTransparent"
             android:layout_height="match_parent"
             android:layout_weight="2">
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/angestellter_bruttogehalt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -129,7 +129,7 @@ android:background="@color/GelbTransparent"
             android:layout_weight="2">
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/angestellter_nettogehalt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -147,7 +147,7 @@ android:background="@color/GelbTransparent"
             android:layout_weight="2">
 
             <EditText
-                android:id="@+id/editText14"
+                android:id="@+id/angestellter_erwerbsminderungsrente"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -165,7 +165,7 @@ android:background="@color/GelbTransparent"
             android:layout_weight="2">
 
             <EditText
-                android:id="@+id/editText13"
+                android:id="@+id/angestellter_sontEinnahmen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -182,7 +182,7 @@ android:background="@color/GelbTransparent"
             android:layout_weight="2">
 
             <EditText
-                android:id="@+id/editText15"
+                android:id="@+id/angestellter_BUA"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
