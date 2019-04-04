@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_tuerkis"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unfallassistenzleistungen"
+            android:textSize="30dp"
+            android:textColor="@color/Dunkelrot"
+            android:gravity="center"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Unsere Unfallassistenzleistungen bieten auf Wunsch und je nach Schweregrad der Verletzung eine Leistungskette, mit der wir dem Betroffenen nach einem Unfall aktiv zur Seite stehen. Damit der Alltag schnell wieder klappt."
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

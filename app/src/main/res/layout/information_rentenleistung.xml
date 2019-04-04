@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_lila"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rentenleistung bei Invalidität"
+            android:textSize="30dp"
+            android:textColor="@color/Dunkelrot"
+            android:gravity="center"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Die Rentenleistung bei Invalidität hilft, den dauerhaften Mehrbedarf zu finanzieren und die unfallbedingten Einkommensverluste aufzufangen. Sie dient als Einkommensausgleich und zur finanziellen Lebenserleichterung. Die Leistung wird ab einem Invaliditätsgrad von 50%, monatlich und für lebenslang gezahlt. Je nach vereinbartem Leistungsmodell kann eine Zahlung auch bereits ab einem Invaliditätsgrad von 35% erfolgen."
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
