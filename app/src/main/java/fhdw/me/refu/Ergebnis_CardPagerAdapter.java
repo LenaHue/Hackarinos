@@ -49,16 +49,32 @@ public class Ergebnis_CardPagerAdapter extends PagerAdapter implements Ergebnis_
     public Object instantiateItem(ViewGroup container, int position) {
         View view = LayoutInflater.from(container.getContext())
                 .inflate(R.layout.ergebnis_adapter, container, false);
+        //container.addView(view);
+        //bind(mData.get(position), view);
+
+        TextView beschreibung, ergebnis, intervall;
+
+        beschreibung = view.findViewById(R.id.textViewBeschreibung);
+        ergebnis = view.findViewById(R.id.textViewErgebnis);
+        intervall = view.findViewById(R.id.textViewIntervall);
+
+        beschreibung.setText("Rentenleistung");
+        ergebnis.setText("300");
+        intervall.setText("mtl.");
+
+
         container.addView(view);
-        bind(mData.get(position), view);
-        CardView cardView = (CardView) view.findViewById(R.id.Ergebnis_CardView);
+
+        /*CardView cardView = (CardView) view.findViewById(R.id.Ergebnis_CardView);
 
         if (mBaseElevation == 0) {
             mBaseElevation = cardView.getCardElevation();
         }
 
+
+
         cardView.setMaxCardElevation(mBaseElevation * MAX_ELEVATION_FACTOR);
-        mViews.set(position, cardView);
+        mViews.set(position, cardView);*/
         return view;
     }
 

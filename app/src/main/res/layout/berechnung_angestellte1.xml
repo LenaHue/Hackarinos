@@ -24,7 +24,8 @@ android:background="@color/GelbTransparent"
             android:gravity="bottom"
             android:singleLine="true"
             android:text="Geburtsdatum"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/Dunkelrot"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,7 +101,8 @@ android:background="@color/GelbTransparent"
             android:layout_weight="2"
             android:gravity="bottom|left"
             android:text="Einnahme und Absicherung"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/Dunkelrot"/>
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_Bruttogehalt"
@@ -206,15 +208,15 @@ android:background="@color/GelbTransparent"
 
         <Button
             android:id="@+id/button_continue"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="194dp"
+            android:layout_height="59dp"
             android:layout_weight="2.3"
             android:background="@drawable/rectangle_style"
-            android:backgroundTint="#403636"
+
             android:drawableStart="@android:drawable/ic_media_play"
 
             android:gravity="center_horizontal"
-            android:padding="65dp"
+            android:padding="16dp"
             android:topLeftRadius="8dp"
             android:topRightRadius="8dp" />
     </LinearLayout>
