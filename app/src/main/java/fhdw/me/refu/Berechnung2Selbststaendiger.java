@@ -22,6 +22,7 @@ public class Berechnung2Selbststaendiger extends Fragment {
     EditText editTextPrivateVorsorge;
     EditText editTextBUAbsicherung;
     Button buttonContinue;
+    UnfallschutzPerson selbst;
 
     @Nullable
     @Override
@@ -30,6 +31,18 @@ public class Berechnung2Selbststaendiger extends Fragment {
         View view =  inflater.inflate(R.layout.berechnung_selbststaendige,container,false);
 
         buttonContinue = view.findViewById(R.id.button_continue);
+        editTextTag = view.findViewById(R.id.selbst_tag);
+        editTextMonat = view.findViewById(R.id.selbst_monat);
+        editTextJahr = view.findViewById(R.id.selbst_jahr);
+        editTextDurchschnittseinkommen = view.findViewById(R.id.selbst_durchnettoeinkommen);
+        editTextVolleErwerbsminrente = view.findViewById(R.id.selbst_vollerwerbsrente);
+        editTextPrivateVorsorge = view.findViewById(R.id.selbst_privateVororge);
+        editTextBUAbsicherung = view.findViewById(R.id.selbst_bua);
+
+
+
+
+        selbst = new UnfallschutzPerson(this.getArguments().getString("typ"));
 
         buttonContinue.setOnClickListener( new View.OnClickListener(){
             @Override
@@ -37,11 +50,27 @@ public class Berechnung2Selbststaendiger extends Fragment {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
                 Class fragClass = Ergebnis_SwipeData.class;
+                Bundle bundle = new Bundle();
+
                 try{
                     frag = (Fragment) fragClass.newInstance();}
                 catch (Exception e){
                     e.printStackTrace();
                 }
+
+                selbst.setTag(Integer.parseInt(editTextTag.getText().toString()));
+                selbst.setMonat(Integer.parseInt(editTextMonat.getText().toString()));
+                selbst.setJahr(Integer.parseInt(editTextJahr.getText().toString()));
+                selbst.setSelbststaendigNettoeinnahmen(Double.parseDouble(editTextDurchschnittseinkommen.getText().toString()));
+                selbst.setSelbststaendigErwerbsminderungsrente(Double.parseDouble(editTextVolleErwerbsminrente.getText().toString()));
+                selbst.setSelbststaendigPrivateVorsorge(Double.parseDouble(editTextPrivateVorsorge.getText().toString()));
+                selbst.setSelbststaendigBUA(Double.parseDouble(editTextPrivateVorsorge.getText().toString()));
+
+                selbst.berechnen();
+                bundle.putDouble("Rentenleistung",selbst.getRentenleistung());
+                bundle.putDouble("Kapitalleistung",selbst.getKapitalleistung());
+
+                frag.setArguments(bundle);
 
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_selbststaendig,frag);
