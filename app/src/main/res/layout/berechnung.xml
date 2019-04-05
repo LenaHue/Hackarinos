@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="3"
     >
 
 
@@ -20,7 +21,7 @@
         <Button
             android:id="@+id/button_angestellter"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/rectangle_yellow"
             android:drawableTop="@drawable/ic_angestellter"
             android:padding="40dp"
@@ -44,7 +45,7 @@
         <Button
             android:id="@+id/button_selbststaendiger"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/rectangle_tuerkis"
             android:drawableTop="@drawable/ic_selbststaendig"
             android:padding="40dp"
@@ -68,10 +69,10 @@
         <Button
             android:id="@+id/button_senior"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/rectangle_orange"
             android:drawableTop="@drawable/ic_senior"
-            android:padding="40dp"
+            android:padding="15dp"
             android:text="Senior"
             android:textSize="30dp" />
 
