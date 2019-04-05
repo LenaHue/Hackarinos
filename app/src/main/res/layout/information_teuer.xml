@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/rectangle_yellow"
         android:layout_margin="20dp"
+        android:paddingTop="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -22,8 +23,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Die Unabhängigkeit soll auch nach schweren Unfällen erhalten bleiben. Hierfür sind viele Baumaßnahmen und Anschaffungen nötig. \n Zum Beispiel: \ -ein behindertengerechtes Auto  \n - Gutachten für eine Fahrerlaubnis für behindertengerechtes Auto \n - Umbauten im Wohnbereich"
-            android:textSize="25dp"
+            android:text="Die Unabhängigkeit soll auch nach schweren Unfällen erhalten bleiben. Hierfür sind viele Baumaßnahmen und Anschaffungen nötig. \n \n Zum Beispiel: \n - ein behindertengerechtes Auto  \n - Gutachten für eine Fahrerlaubnis für behindertengerechtes Auto \n - Umbauten im Wohnbereich"
+            android:textSize="20dp"
             android:gravity="center"/>
 
 

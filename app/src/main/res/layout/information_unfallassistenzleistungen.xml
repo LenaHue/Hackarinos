@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/rectangle_tuerkis"
         android:layout_margin="20dp"
+        android:paddingTop="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -22,8 +23,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Unsere Unfallassistenzleistungen bieten auf Wunsch und je nach Schweregrad der Verletzung eine Leistungskette, mit der wir dem Betroffenen nach einem Unfall aktiv zur Seite stehen. Damit der Alltag schnell wieder klappt."
-            android:textSize="25dp"
+            android:text="Unsere Unfallassistenzleistungen bieten auf Wunsch und je nach Schweregrad der Verletzung eine Leistungskette, mit der wir dem Betroffenen nach einem Unfall aktiv zur Seite stehen. \n Damit der Alltag schnell wieder klappt."
+            android:textSize="20dp"
             android:gravity="center"/>
 
 

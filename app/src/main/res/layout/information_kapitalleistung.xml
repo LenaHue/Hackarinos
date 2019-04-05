@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/rectangle_orange"
         android:layout_margin="20dp"
+        android:paddingTop="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -22,9 +23,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Die Kapitalleistung bei Invalidität hilft bei der einmaligen Anschaffung für einen barrierefreien Neustart nach dem Unfall. Die Kapitalleistung lässt sich nach dem Grad der dauernden Invalidität berechnen und wird bei jedem messbaren Invaliditätsgrad gezahlt. In Verbindung mit verschiedenen Leistungsmodellen können Sie eine Erhöhung der jeweiligen Auszahlungssumme ab bestimmten Invaliditätsgraden vereinbaren."
-            android:textSize="25dp"
-            android:gravity="center"/>
+            android:text="Die Kapitalleistung bei Invalidität hilft bei der einmaligen Anschaffung für einen barrierefreien Neustart nach dem Unfall. \n \n Die Kapitalleistung lässt sich nach dem Grad der dauernden Invalidität berechnen und wird bei jedem messbaren Invaliditätsgrad gezahlt. \n \n In Verbindung mit verschiedenen Leistungsmodellen können Sie eine Erhöhung der jeweiligen Auszahlungssumme ab bestimmten Invaliditätsgraden vereinbaren."
+            android:textSize="20dp"
+            android:gravity="center"
+            />
 
 
     </LinearLayout>

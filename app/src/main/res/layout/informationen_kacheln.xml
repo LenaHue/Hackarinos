@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+<LinearLayout
+    android:id="@+id/framelayout_informationen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
         <LinearLayout
             android:id="@+id/linearlayout_kacheln_oben"
@@ -21,6 +18,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_kosten"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/Orange_hell"
@@ -28,6 +26,7 @@
                 android:text="Kosten steigen um ca. 50%"/>
 
             <Button
+                android:id="@+id/button_teuer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/Gelb_hell"
@@ -46,13 +45,15 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_unfallassistenzleistungen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/Türkis"
                 android:layout_weight="1"
-                android:text="Unfallassistenz-leistungen"/>
+                android:text="Unfallassistenz-\n leistungen"/>
 
             <Button
+                android:id="@+id/button_kapitalleistung"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/Orange_hell"
@@ -71,13 +72,15 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_expertenmeinungen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/Gelb_hell"
                 android:layout_weight="1.5"
-                android:text="Experten-meinungen"/>
+                android:text="Experten-\n meinungen"/>
 
             <Button
+                android:id="@+id/button_rentenleistungen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/Lila"
@@ -87,5 +90,3 @@
         </LinearLayout>
     </LinearLayout>
 
-
-</android.support.constraint.ConstraintLayout>

@@ -8,12 +8,13 @@
         android:layout_height="match_parent"
         android:background="@drawable/rectangle_orange"
         android:layout_margin="20dp"
+        android:paddingTop="20dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kosten steigen um ca. 50%"
+            android:text="Kosten steigen um \n ca. 50%"
             android:textSize="30dp"
             android:textColor="@color/Dunkelrot"
             android:gravity="center"
@@ -22,8 +23,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Die Erfahrung zeigt, dass ein barrierefreies Leben um etwa 50% teurer ist. Zusätzlich zu den schon genannten Kosten fallen Ausgaben für Arznei- und Hilfsmittel an. Gegebenenfalls wird eine Haushaltshilfe benötigt. Auch Reisen und andere Freizeitaktivitäten werden wesentlich teurer."
-            android:textSize="25dp"
+            android:text="Die Erfahrung zeigt, dass ein barrierefreies Leben um etwa 50% teurer ist. Zusätzlich zu den schon genannten Kosten fallen Ausgaben für Arznei- und Hilfsmittel an. \n Gegebenenfalls wird eine Haushaltshilfe benötigt. Auch Reisen und andere Freizeitaktivitäten werden wesentlich teurer."
+            android:textSize="20dp"
             android:gravity="center"/>
 
 
