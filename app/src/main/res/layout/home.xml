@@ -18,55 +18,68 @@
             android:id="@+id/button_bad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="171dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button_kueche"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/button_tuer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="73dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="146dp"
-            tools:layout_editor_absoluteY="347dp" />
+            app:layout_constraintEnd_toEndOf="@+id/button_kueche"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button_kueche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="219dp"
-            tools:layout_editor_absoluteY="260dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button_tuer"
+            app:layout_constraintEnd_toEndOf="@+id/buttonFlur"
+            app:layout_constraintStart_toEndOf="@+id/buttonFlur" />
 
         <Button
             android:id="@+id/buttonSchlafzimmer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginBottom="34dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="146dp" />
+            app:layout_constraintBottom_toTopOf="@+id/buttonWohnzimmer"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/buttonFlur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="135dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginBottom="19dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="174dp"
-            tools:layout_editor_absoluteY="161dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button_kueche"
+            app:layout_constraintEnd_toEndOf="@+id/button_bad"
+            app:layout_constraintStart_toStartOf="@+id/buttonSchlafzimmer" />
 
         <Button
             android:id="@+id/buttonWohnzimmer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="58dp"
-            tools:layout_editor_absoluteY="260dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button_tuer"
+            app:layout_constraintEnd_toStartOf="@+id/button_tuer" />
     </android.support.constraint.ConstraintLayout>
 
     <LinearLayout
