@@ -83,7 +83,7 @@ public class Home extends Fragment {
         buttonTuer.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "DHöhe der Türgriffe und Breite der Tür", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Höhe der Türgriffe und Breite der Tür", Toast.LENGTH_SHORT).show();
             }
         });
         buttonKueche.setOnClickListener( new View.OnClickListener(){
