@@ -49,7 +49,7 @@ public class Berechnung2Selbststaendiger extends Fragment {
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
-                Class fragClass = Ergebnis_SwipeData.class;
+                Class fragClass = Ergebnis.class;
                 Bundle bundle = new Bundle();
 
                 try{

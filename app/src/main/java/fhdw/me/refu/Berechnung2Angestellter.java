@@ -1,5 +1,6 @@
 package fhdw.me.refu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -47,7 +48,7 @@ public class Berechnung2Angestellter extends Fragment {
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
-                Class fragClass = Ergebnis_SwipeData.class;
+                Class fragClass = Ergebnis.class;
                 Bundle bundle = new Bundle();
                 try{
                     frag = (Fragment) fragClass.newInstance();}
@@ -74,6 +75,7 @@ public class Berechnung2Angestellter extends Fragment {
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.framelayout_angestellter,frag);
                 ft.addToBackStack("tag").commit();
+
             }
         });
 
