@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class ErgebnisFragment extends Fragment {
 
     private String title;
@@ -31,9 +34,10 @@ public class ErgebnisFragment extends Fragment {
         page=getArguments().getInt("someInt",0);
         title = getArguments().getString("someTitle");
         value = getArguments().getDouble("value");
+        NumberFormat nf = new DecimalFormat("#0.00");
         try {
 
-            stringValue = Double.toString(value);
+            stringValue = nf.format(value);
         }
         catch(Exception e){
             e.printStackTrace();
