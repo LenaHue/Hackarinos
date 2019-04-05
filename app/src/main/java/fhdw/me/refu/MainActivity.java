@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass= Home.class;
                 break;
             case R.id.nav_info:
-                fragmentClass = Home.class;
+                fragmentClass = Information.class;
                 break;
             default:
                 fragmentClass = Berechnung.class;
