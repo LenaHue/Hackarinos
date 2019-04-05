@@ -18,80 +18,65 @@
             android:id="@+id/button_bad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="49dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="14dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/buttonFlur"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/button_kueche"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/button_tuer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="7dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_kueche" />
+            app:layout_constraintEnd_toEndOf="@+id/button_kueche"
+            app:layout_constraintStart_toStartOf="@+id/buttonWohnzimmer" />
 
         <Button
             android:id="@+id/button_kueche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="138dp"
-            android:layout_marginBottom="53dp"
+            android:layout_marginBottom="1dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/button_tuer"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/buttonWohnzimmer"
-            app:layout_constraintTop_toBottomOf="@+id/buttonFlur" />
+            app:layout_constraintEnd_toStartOf="@+id/button_bad" />
 
         <Button
             android:id="@+id/buttonSchlafzimmer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="79dp"
-            android:layout_marginTop="229dp"
-            android:layout_marginEnd="23dp"
-            android:layout_marginBottom="75dp"
+            android:layout_marginStart="67dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/buttonWohnzimmer"
-            app:layout_constraintEnd_toStartOf="@+id/buttonFlur"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/button_kueche"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/buttonFlur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="213dp"
-            android:layout_marginEnd="89dp"
-            android:layout_marginBottom="51dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="22dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
-            app:layout_constraintStart_toEndOf="@+id/buttonSchlafzimmer"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/buttonSchlafzimmer"
+            app:layout_constraintStart_toEndOf="@+id/buttonSchlafzimmer" />
 
         <Button
             android:id="@+id/buttonWohnzimmer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="111dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="98dp"
+            android:layout_marginTop="19dp"
             android:background="@drawable/buttons_with_borders"
             android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_kueche"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/buttonSchlafzimmer"
             app:layout_constraintTop_toBottomOf="@+id/buttonSchlafzimmer" />
     </android.support.constraint.ConstraintLayout>
 
