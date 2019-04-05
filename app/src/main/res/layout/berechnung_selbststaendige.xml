@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    android:background="@color/OrangeTransparent">
+    android:background="@drawable/rectangle_tuerkis">
 
     <LinearLayout
         android:layout_width="match_parent"
