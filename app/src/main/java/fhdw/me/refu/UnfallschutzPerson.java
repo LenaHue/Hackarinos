@@ -11,52 +11,52 @@ public class UnfallschutzPerson {
 
     //ATTRIBUTE ------------------------------------------------------------------------------------
 
-    public int tag, monat, jahr, alter;
+    public int tag = 0, monat = 0, jahr = 0, alter = 0;
 
     public String type;                     //Identifizierendes Attribut
 
     //Angestellter ------------------------------------
 
-    public double angestellterBruttogehalt, //Eingabegrößen durch Vermittler
-            angestellterNettogehalt,
-            angestellterErwerbsminderungsrente,
-            angestellterPrivateVorsorge,
-            angestellterBUA;
+    public double angestellterBruttogehalt = 0.0, //Eingabegrößen durch Vermittler
+            angestellterNettogehalt = 0.0,
+            angestellterErwerbsminderungsrente = 0.0,
+            angestellterPrivateVorsorge = 0.0,
+            angestellterBUA = 0.0;
 
-    public double angestellterVersorgungsluecke, //Rechengrößen
-            angestellterVersorgungslueckeERGOU,
-            angestellterHalbesNetto,
-            angestellterHalbesNettoERGOU;
+    public double angestellterVersorgungsluecke = 0.0, //Rechengrößen
+            angestellterVersorgungslueckeERGOU = 0.0,
+            angestellterHalbesNetto = 0.0,
+            angestellterHalbesNettoERGOU = 0.0;
 
     //Selbstständiger ---------------------------------
 
-    public double selbststaendigNettoeinnahmen,  //Eingabegrößen durch Vermittler
-            selbststaendigErwerbsminderungsrente,
-            selbststaendigPrivateVorsorge,
-            selbststaendigBUA;
+    public double selbststaendigNettoeinnahmen = 0.0,  //Eingabegrößen durch Vermittler
+            selbststaendigErwerbsminderungsrente = 0.0,
+            selbststaendigPrivateVorsorge = 0.0,
+            selbststaendigBUA = 0.0;
 
-    public double selbststaendigVersorgungsluecke,  //Rechengrößen
-            selbststaendigVersorgungslueckeERGOU,
-            selbststaendigHalbesNetto,
-            selbststaendigHalbesNettoERGOU;
+    public double selbststaendigVersorgungsluecke = 0.0,  //Rechengrößen
+            selbststaendigVersorgungslueckeERGOU = 0.0,
+            selbststaendigHalbesNetto = 0.0,
+            selbststaendigHalbesNettoERGOU = 0.0;
 
     //Senior ------------------------------------------
 
-    public double seniorRente,  //Eingabegrößen durch Vermittler
-            seniorNebenjob,
-            seniorEinnahmen;
-    public int seniorAlterStart,
-            seniorRenteneintritt;
+    public double seniorRente = 0.0,  //Eingabegrößen durch Vermittler
+            seniorNebenjob = 0.0,
+            seniorEinnahmen = 0.0;
+    public int seniorAlterStart = 0,
+            seniorRenteneintritt = 0;
 
-    public double seniorVersorgungsluecke = 0,  //Rechengrößen
-            seniorVersorgungslueckeERGOU,
-            seniorHalbeEinnahmen,
-            seniorHalbeEinnahmenERGOU;
+    public double seniorVersorgungsluecke = 0.0,  //Rechengrößen
+            seniorVersorgungslueckeERGOU = 0.0,
+            seniorHalbeEinnahmen = 0.0,
+            seniorHalbeEinnahmenERGOU = 0.0;
 
     //Ergebnis ----------------------------------------
 
-    public double Kapitalleistung,
-            Rentenleistung;
+    public double Kapitalleistung = 0.0,
+            Rentenleistung = 0.0;
 
 
     //KONSTRUKTOR ----------------------------------------------------------------------------------

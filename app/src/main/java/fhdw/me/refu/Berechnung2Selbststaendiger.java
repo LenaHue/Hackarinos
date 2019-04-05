@@ -42,7 +42,7 @@ public class Berechnung2Selbststaendiger extends Fragment {
 
 
 
-        selbst = new UnfallschutzPerson(this.getArguments().getString("typ"));
+        selbst = new UnfallschutzPerson(this.getArguments().getString("type"));
 
         buttonContinue.setOnClickListener( new View.OnClickListener(){
             @Override
@@ -78,6 +78,18 @@ public class Berechnung2Selbststaendiger extends Fragment {
             }
         });
 
+        /*
+        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    editText.setHint("Placeholder");
+                } else {
+                    editText.setHint("");
+                }
+            }
+        });
+        */
         return view;
     }
 }

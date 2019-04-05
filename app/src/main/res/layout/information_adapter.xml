@@ -19,8 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/rectangle_style"
-            android:backgroundTint="@color/Hellgrau">
+            android:background="@drawable/rectangle_tuerkis"
+            >
 
 
             <TextView
@@ -33,14 +33,20 @@
                 android:textSize="40dp"
                 />
 
-            <TextView
-                android:id="@+id/textViewInformation"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="bla bla"
-                android:textSize="30dp"
-                />
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="bla"
+                    android:textSize="30dp"
+                    />
+
+            </ScrollView>
 
 
         </LinearLayout>

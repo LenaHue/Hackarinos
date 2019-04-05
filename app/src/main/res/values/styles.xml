@@ -5,7 +5,11 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/Dunkelrot_transparent</item>
         <item name="colorPrimaryDark">@color/Tintenblau</item>
-        <item name="colorAccent">@color/Türkis</item>
+        <item name="colorAccent">@color/Schwarz</item>
+        <item name="android:textColorHint">@color/Schwarz</item>
+        <item name="android:colorControlActivated">@color/Schwarz</item>
+
+
     </style>
 
     <style name="AppTheme.NoActionBar">

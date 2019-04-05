@@ -11,121 +11,186 @@ android:background="@color/GelbTransparent"
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.8"
+        android:layout_weight="2"
         android:orientation="vertical"
-        android:weightSum="8"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:weightSum="8">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
             android:gravity="bottom"
+            android:singleLine="true"
             android:text="Geburtsdatum"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/Dunkelrot"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/angestellter_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="TT" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_tt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-            <EditText
-                android:id="@+id/angestellter_monat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="MM" />
+                <EditText
+                    android:id="@+id/angestellter_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="TT"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:id="@+id/angestellter_jahr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="JJJJ" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_MM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/angestellter_monat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_JJJJ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/angestellter_jahr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="JJJJ"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6.4"
+        android:layout_weight="6.2"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:weightSum="12">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="bottom|left"
             android:text="Einnahme und Absicherung"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/Dunkelrot"/>
 
-        <EditText
-            android:id="@+id/angestellter_bruttogehalt"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Bruttogehalt"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Bruttogehalt"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
-        <EditText
-            android:id="@+id/angestellter_nettogehalt"
+            <EditText
+                android:id="@+id/angestellter_bruttogehalt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Bruttogehalt"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Nettogehalt"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nettogehalt"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
-        <EditText
-            android:id="@+id/angestellter_erwerbsminderungsrente"
+            <EditText
+                android:id="@+id/angestellter_nettogehalt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nettogehalt"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Volle_Erwerbsminderungsrente"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Volle Erwerbsminderungsrente"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
-        <EditText
-            android:id="@+id/angestellter_sontEinnahmen"
+            <EditText
+                android:id="@+id/angestellter_erwerbsminderungsrente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Volle Erwerbsminderungsrente"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_sonstige_Einnahme"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="sonstige Einnahme"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
-        <EditText
-            android:id="@+id/angestellter_BUA"
+            <EditText
+                android:id="@+id/angestellter_sontEinnahmen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Sonstige Einnahme"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Private_Erwerbs_oder_BU_Absicherung"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Private Erwerbs- oder BU- Absicherung"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
+            <EditText
+                android:id="@+id/angestellter_BUA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Private Erwerbs- oder BU- Absicherung"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -143,15 +208,15 @@ android:background="@color/GelbTransparent"
 
         <Button
             android:id="@+id/button_continue"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="194dp"
+            android:layout_height="59dp"
             android:layout_weight="2.3"
             android:background="@drawable/rectangle_style"
-            android:backgroundTint="#403636"
+
             android:drawableStart="@android:drawable/ic_media_play"
 
             android:gravity="center_horizontal"
-            android:padding="44dp"
+            android:padding="16dp"
             android:topLeftRadius="8dp"
             android:topRightRadius="8dp" />
     </LinearLayout>
