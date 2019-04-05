@@ -1,5 +1,6 @@
 package fhdw.me.refu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -47,13 +48,13 @@ public class Berechnung2Angestellter extends Fragment {
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
                 Fragment frag = null;
-                Class fragClass = Ergebnis_SwipeData.class;
-                Bundle bundle = new Bundle();
-                try{
-                    frag = (Fragment) fragClass.newInstance();}
-                catch (Exception e){
-                    e.printStackTrace();
-                }
+                //Class fragClass = Ergebnis_SwipeData.class;
+                //Bundle bundle = new Bundle();
+                //try{
+                    //frag = (Fragment) fragClass.newInstance();}
+                //catch (Exception e){
+                //    e.printStackTrace();
+                //}
 
                 angestellter.setTag(Integer.parseInt(editTextTag.getText().toString()));
                 angestellter.setMonat(Integer.parseInt(editTextMonat.getText().toString()));
@@ -66,14 +67,15 @@ public class Berechnung2Angestellter extends Fragment {
 
                 angestellter.berechnen();
 
-                bundle.putDouble("Rentenleistung", angestellter.getRentenleistung());
-                bundle.putDouble("Kapitalleistung", angestellter.getKapitalleistung());
+                //bundle.putDouble("Rentenleistung", angestellter.getRentenleistung());
+                //bundle.putDouble("Kapitalleistung", angestellter.getKapitalleistung());
 
-                frag.setArguments(bundle);
+                //frag.setArguments(bundle);
 
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.framelayout_angestellter,frag);
-                ft.addToBackStack("tag").commit();
+                //FragmentTransaction ft = fm.beginTransaction();
+                //ft.replace(R.id.framelayout_angestellter,frag);
+                //ft.addToBackStack("tag").commit();
+                startActivity(new Intent(getContext(), Ergebnis_SwipeData.class));
             }
         });
 
